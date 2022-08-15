@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+      .card {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        background-color: #fff;
+        border-radius: 8px;
+        transition: 0.45s;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.35);
+      }
+      .card:hover {
+        height: 450px;
+      }
+      .card:hover .profile-img-container {
+        width: 250px;
+        height: 250px;
+      }
+      .profile-img-container {
+        width: 150px;
+        height: 150px;
+        background-color: black;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 17px 20px rgba(0, 0, 0, 0.35);
+        transition: 0.45s;
+      }
+      .profile-img-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .content {
+        height: 100%;
+        width: 100%;
+        /* margin-top: 60px; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+      .content-wrapper {
+        width: 100%;
+        text-align: center;
+        padding: 30px 30px;
+      }
+      .social-media {
+        display: flex;
+        justify-content: space-between;
+        /* background-color: red; */
+        margin-bottom: 20px;
+      }
+      .designation {
+        margin-bottom: 20px;
+      }
+      .designation h2 {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .designation h3 {
+        font-size: 20px;
+        font-weight: 600;
+        opacity: 0.5;
+      }
+      .social-media-statitics h3 {
+        font-weight: bold;
+        font-size: 22px;
+      }
+      .social-media-statitics p {
+        font-size: 15px;
+        opacity: 0.5;
+        font-weight: 600;
+      }
+      .call-to-action {
+        display: flex;
+        justify-content: space-between;
+      }
+      .call-to-action button {
+        font-size: 16px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        background-color: #3edfd6;
+        cursor: pointer;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .call-to-action button:hover {
+        background-color: #38c9c1;
+      }
+      .call-to-action button:last-child {
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.192);
+        color: rgba(0, 0, 0, 0.8);
+      }
+      .call-to-action button:last-child:hover {
+        background-color: rgba(0, 0, 0, 0.192);
+
+        color: rgba(0, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="profile-img-container">
+        <img src="/card/img/profile.jpg" alt="profile picture" />
+      </div>
+      <div class="content">
+        <div class="content-wrapper">
+          <div class="designation">
+            <h2>Coover Smith</h2>
+            <h3>Software Developer</h3>
+          </div>
+          <div class="social-media">
+            <div class="social-media-statitics">
+              <h3>512</h3>
+              <p>Posts</p>
+            </div>
+            <div class="social-media-statitics">
+              <h3>7.4K</h3>
+              <p>Likes</p>
+            </div>
+            <div class="social-media-statitics">
+              <h3>800</h3>
+              <p>Following</p>
+            </div>
+          </div>
+          <div class="call-to-action">
+            <button>Follow</button>
+            <button>Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
