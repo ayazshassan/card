@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images with options using CSS</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin-top: 50px;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .container {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .image-container {
+        height: 200px;
+        background-color: aquamarine;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        flex: 0 0 300px;
+      }
+      .image-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .images-options {
+        height: 100%;
+        width: 50px;
+        background-color: brown;
+        position: absolute;
+        right: 0px;
+        opacity: 0.65;
+        background-color: black;
+        right: -50px;
+        transition: all 1s;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .image-container:hover .images-options {
+        right: 0px;
+      }
+      .images-options ion-icon {
+        font-size: 25px;
+        color: #fff;
+      }
+      ion-icon:hover {
+        color: aquamarine;
+      }
+      h1 {
+        text-align: center;
+        font-size: 60px;
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Images with options using CSS</h1>
+    <div class="container">
+      <div class="image-container">
+        <img src="../ImagesWithOptions/img/kid1.jpg" />
+        <div class="images-options">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="share-outline"></ion-icon>
+          <ion-icon name="bookmark-outline" class="show"></ion-icon>
+          <ion-icon name="bookmark hide"></ion-icon>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="../ImagesWithOptions/img/kid2.jpg" />
+        <div class="images-options">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="share-outline"></ion-icon>
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="../ImagesWithOptions/img/Butterfly.jpg" />
+        <div class="images-options">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="share-outline"></ion-icon>
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="../ImagesWithOptions/img/profile1.jpg" />
+        <div class="images-options">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="share-outline"></ion-icon>
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="../iImagesWithOptions/mg/profile7.jpg" />
+        <div class="images-options">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="share-outline"></ion-icon>
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="../ImagesWithOptions/img/Travel1.avif" />
+        <div class="images-options">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="share-outline"></ion-icon>
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="../ImagesWithOptions/img/Travel3.avif" />
+        <div class="images-options">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="share-outline"></ion-icon>
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="../ImagesWithOptions/img/profile8.jpg" />
+        <div class="images-options">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="share-outline"></ion-icon>
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="../ImagesWithOptions/img/wrist-watch.jpg" />
+        <div class="images-options">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="share-outline"></ion-icon>
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="../ImagesWithOptions/img/Paris.jpg" />
+        <div class="images-options">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="share-outline"></ion-icon>
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="../ImagesWithOptions/img/rose.jpg" />
+        <div class="images-options">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="share-outline"></ion-icon>
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="../ImagesWithOptions/img/telephone-booth.jpg" />
+        <div class="images-options">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="share-outline"></ion-icon>
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
